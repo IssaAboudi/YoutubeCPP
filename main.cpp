@@ -1,38 +1,22 @@
 #include <iostream>
+
 using namespace std;
 
 int main() {
 
-    //integers - whole numbers, can be positive and negative
-    int num = 5; //declaring a variable (int num) and initializing it (= 5)
+    string text = "I am text"; //variable
+    //COUT (character output) = <<
+    cout << "I am text" << std::endl; //literal
 
-    //floats & doubles - decimal numbers (5.5) etc.
-    //doubles are larger than floats
+    // \n (newline character) and std::endl;
 
-    float x = 5.5;
-    x = 20.5;
-    double y = 28.4;
+    cout << "Test text" << endl;
+    cout << "Test text\n"; //makes a new line after the text
 
-    std::cout << num << std::endl;
-    std::cout << x << std::endl;
-    std::cout << y << std::endl;
+    //escape characters
+    //they escape the string they're in.
+    cout << "\"Test text\"";
 
-    //char (characters) - represent letters in code
-    char letter = 'A'; //computer is reading A as 65 (in decimal)
-    letter = 'F'; //ascii value of 'F' (Reassignment)
-
-    std::cout << letter << std::endl;
-
-    //String class
-    string text = "I am Issa";
-
-    std::cout << text << std::endl;
-
-
-    //you make a variable by followign this format:
-    //1) type (what type is that variable)
-    //2) name - what we call it in the program
-    //3) (optional) - initial value
 
     std::cout << "Program Ending" << std::endl;
     return 0;
