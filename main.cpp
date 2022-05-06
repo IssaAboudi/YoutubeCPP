@@ -1,74 +1,36 @@
 #include <iostream>
 
+
+
+int add(int a, int b){
+    int sum = a + b;
+    std::cout << sum << std::endl;
+    return sum;
+}
+
 int main() {
 
-    bool value = 0; //false == 0, true == any number > 0
 
 
-    //Conditional - something that can be evaluated to true or false
+    int x = 25;
+    int y = 357;
 
-    //x and y, x = 5 and y = 10
-    int x = 5;
-    int y = 10;
+    int answer = add(5, 15); //calling the add function
+    std::cout << answer << std::endl;
+    answer++;
+    std::cout << answer << std::endl;
 
-    value = x < y;
+    add(x, y);
 
-    std::cout << value << std::endl;
+    std::cout << add(20, 150) << std::endl;
 
-    bool person = true;
-
-    if(person == true){
-        std::cout << "Person is true" << std::endl;
-        //do something
-    } else {
-        std::cout << "Person is NOT true" << std::endl;
-    }
-
-    if(person and x < y){ //&& or "and"
-        std::cout << "Both Conditions are true" << std::endl;
-    } else {
-        std::cout << "Not all Conditions are true" << std::endl;
-    }
-
-    if(person or x < y){ //|| or "or"
-        std::cout << "Both Conditions are true" << std::endl;
-    } else {
-        std::cout << "Not all Conditions are true" << std::endl;
-    }
-
-    bool valid = false;
-
-    if(!valid) { //the code eblow will only execute when value is "not false" aka "true"
-        std::cout << "Valid is true" << std::endl;
-    } else {
-        std::cout << "Valid is false" << std::endl;
-    }
-
-    std::cout << valid << std::endl;
-    valid = !valid;
-    std::cout << valid << std::endl;
-    valid = !valid;
-    std::cout << valid << std::endl;
-    valid = !valid;
-    std::cout << valid << std::endl;
-    valid = !valid;
-    std::cout << valid << std::endl;
-
-    bool value2 = false;
-    if(!value2) {
-        std::cout << "True" << std::endl;
-        value2 = !value2;
-    } else {
-        std::cout << "False" << std::endl;
-        value2 = !value2;
-    }
-    if(!value2) {
-        std::cout << "True" << std::endl;
-        value2 = !value2;
-    } else {
-        std::cout << "False" << std::endl;
-        value2 = !value2;
-    }
+//
+//    x = 20;
+//    y = 150;
+//
+//    sum = x + y;
+//
+//    std::cout << sum << std::endl;
 
     std::cout << "Program Ending" << std::endl;
     return 0;
